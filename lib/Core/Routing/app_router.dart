@@ -4,10 +4,11 @@ import 'package:my_advanced_app/Features/onBoarding/presentation/view/on_boardin
 
 class AppRouter {
   static Route generateRouter(RouteSettings settings) {
+    var argumant = settings.arguments;
     switch (settings.name) {
       case Routes.onBoardingScreen:
-        return MaterialPageRoute(builder: (context) => const OnBoardingScreen());
-
+        return MaterialPageRoute(
+            builder: (context) => const OnBoardingScreen());
       default:
         return unDefinedRoute();
     }
