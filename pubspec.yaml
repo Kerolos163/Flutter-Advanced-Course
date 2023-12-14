@@ -49,6 +49,7 @@ dependencies:
   flutter_screenutil: ^5.9.0
   flutter_svg: 
   gap: ^3.0.1
+  flutter_native_splash: ^2.3.8
 
 
 dev_dependencies:
