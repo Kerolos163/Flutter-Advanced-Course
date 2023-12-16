@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
-import 'package:my_advanced_app/Core/App_Theme/text_style.dart';
-import 'package:my_advanced_app/Core/asset_manager/app_svg.dart';
+
+import '../../../../../Core/App_Theme/text_style.dart';
+import '../../../../../Core/asset_manager/app_svg.dart';
 
 class LogoWithTitle extends StatelessWidget {
   const LogoWithTitle({super.key});

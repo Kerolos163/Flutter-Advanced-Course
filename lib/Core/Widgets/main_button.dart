@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:my_advanced_app/Core/App_Theme/app_color.dart';
-import 'package:my_advanced_app/Core/App_Theme/text_style.dart';
+import '../App_Theme/app_color.dart';
+import '../App_Theme/text_style.dart';
 
 class MainButton extends StatelessWidget {
   const MainButton({super.key, required this.label, this.onPressed});

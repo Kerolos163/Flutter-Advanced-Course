@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_advanced_app/Core/Routing/routes.dart';
-import 'package:my_advanced_app/Features/LogIn/presentaion/view/login_view.dart';
-import 'package:my_advanced_app/Features/onBoarding/presentation/view/on_boarding_view.dart';
+
+import '../../Features/LogIn/presentaion/view/login_view.dart';
+import '../../Features/onBoarding/presentation/view/on_boarding_view.dart';
+import 'routes.dart';
 
 class AppRouter {
   static Route generateRouter(RouteSettings settings) {

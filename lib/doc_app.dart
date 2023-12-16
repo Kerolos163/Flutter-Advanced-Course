@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:my_advanced_app/Core/App_Theme/app_color.dart';
-import 'package:my_advanced_app/Core/Routing/app_router.dart';
-import 'package:my_advanced_app/Core/Routing/routes.dart';
+import 'Core/App_Theme/app_color.dart';
+import 'Core/Routing/app_router.dart';
+import 'Core/Routing/routes.dart';
 
 class DocApp extends StatelessWidget {
   const DocApp({super.key});
@@ -18,6 +18,12 @@ class DocApp extends StatelessWidget {
         theme: ThemeData(
           primaryColor: AppColor.primary,
           scaffoldBackgroundColor: AppColor.white,
+          primarySwatch: Colors.blue,
+          textSelectionTheme: TextSelectionThemeData(
+            selectionColor: AppColor.primary.withOpacity(.4),
+            cursorColor: AppColor.primary,
+            selectionHandleColor: AppColor.primary,
+          ),
         ),
         onGenerateRoute: AppRouter.generateRouter,
         initialRoute: Routes.onBoardingScreen,
