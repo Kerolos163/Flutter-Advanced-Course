@@ -30,21 +30,22 @@ class TextFormFieldContainer extends StatelessWidget {
       validator: validator,
       cursorColor: AppColor.primary,
       decoration: InputDecoration(
-          filled: true,
-          fillColor: backgroundColor ?? AppColor.moreLightGray,
-          hintText: hint,
-          hintStyle: AppTextStyle.getFontStyle(
-              color: AppColor.lightGray,
-              fontSize: 14,
-              fontWeight: FontWeight.w500),
-          isDense: true,
-          contentPadding: contentPadding ??
-              EdgeInsets.symmetric(horizontal: 20.w, vertical: 18.h),
-          border: borderState(color: AppColor.lightGray),
-          enabledBorder: borderState(color: AppColor.lightGray),
-          focusedBorder: borderState(color: AppColor.primary),
-          focusedErrorBorder: borderState(color: AppColor.error),
-          suffixIcon: suffixIcon),
+        filled: true,
+        fillColor: backgroundColor ?? AppColor.moreLightGray,
+        hintText: hint,
+        hintStyle: AppTextStyle.getFontStyle(
+            color: AppColor.lightGray,
+            fontSize: 14,
+            fontWeight: FontWeight.w500),
+        isDense: true,
+        contentPadding: contentPadding ??
+            EdgeInsets.symmetric(horizontal: 20.w, vertical: 18.h),
+        enabledBorder: borderState(color: AppColor.lightGray),
+        focusedBorder: borderState(color: AppColor.primary),
+        focusedErrorBorder: borderState(color: AppColor.error),
+        suffixIcon: suffixIcon,
+      ),
+      style: AppTextStyle.getFontStyle(color: AppColor.textColor),
     );
   }
 
