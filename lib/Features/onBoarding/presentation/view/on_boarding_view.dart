@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
-import 'package:my_advanced_app/Core/App_Theme/app_color.dart';
-import 'package:my_advanced_app/Core/App_Theme/text_style.dart';
-import 'package:my_advanced_app/Core/Widgets/main_button.dart';
-import 'package:my_advanced_app/Features/onBoarding/presentation/view/Widget/doctor_image_with_logo.dart';
-import 'package:my_advanced_app/Features/onBoarding/presentation/view/Widget/logo_with_title.dart';
+import '../../../../Core/App_Theme/app_color.dart';
+import '../../../../Core/App_Theme/text_style.dart';
+import '../../../../Core/Routing/routes.dart';
+import '../../../../Core/Widgets/main_button.dart';
+import '../../../../Core/helpers/extensions.dart';
+import 'Widget/doctor_image_with_logo.dart';
+import 'Widget/logo_with_title.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -37,7 +39,9 @@ class OnBoardingScreen extends StatelessWidget {
                     Gap(32.h),
                     MainButton(
                       label: "Get Started",
-                      onPressed: () {},
+                      onPressed: () {
+                        context.pushNamed(Routes.loginScreen);
+                      },
                     )
                   ],
                 ),

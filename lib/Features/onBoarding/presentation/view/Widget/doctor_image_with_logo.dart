@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:my_advanced_app/Core/App_Theme/app_color.dart';
-import 'package:my_advanced_app/Core/App_Theme/text_style.dart';
-import 'package:my_advanced_app/Core/asset_manager/app_image.dart';
-import 'package:my_advanced_app/Core/asset_manager/app_svg.dart';
+
+import '../../../../../Core/App_Theme/app_color.dart';
+import '../../../../../Core/App_Theme/text_style.dart';
+import '../../../../../Core/asset_manager/app_image.dart';
+import '../../../../../Core/asset_manager/app_svg.dart';
 
 class DoctorImageWithLogo extends StatelessWidget {
   const DoctorImageWithLogo({super.key});
