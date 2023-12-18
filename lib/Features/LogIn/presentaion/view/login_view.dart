@@ -13,25 +13,22 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => LoginCubit(),
-      child: Scaffold(
-        body: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.all(30),
-            child: ListView(
-              children: [
-                const WelcomeBackContainer(),
-                Gap(36.h),
-                BlocBuilder<LoginCubit, LoginState>(
-                  builder: (context, state) {
-                    return LoginFormWidget(
-                      isVisiablePassword: LoginCubit.get(context).isVisiable,
-                    );
-                  },
-                )
-              ],
-            ),
+    return Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(30),
+          child: ListView(
+            children: [
+              const WelcomeBackContainer(),
+              Gap(36.h),
+              BlocBuilder<LoginCubit, LoginState>(
+                builder: (context, state) {
+                  return LoginFormWidget(
+                    isVisiablePassword: LoginCubit.get(context).isVisiable,
+                  );
+                },
+              )
+            ],
           ),
         ),
       ),
