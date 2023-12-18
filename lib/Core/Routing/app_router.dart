@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:my_advanced_app/Core/di/dependency_injection.dart';
+import 'package:my_advanced_app/Features/LogIn/presentaion/viewModel/loginCubit/cubit.dart';
 
 import '../../Features/LogIn/presentaion/view/login_view.dart';
 import '../../Features/onBoarding/presentation/view/on_boarding_view.dart';
@@ -14,7 +17,10 @@ class AppRouter {
             builder: (context) => const OnBoardingScreen());
       case Routes.loginScreen:
         return MaterialPageRoute(
-            builder: (context) => const LoginScreen());
+            builder: (context) => BlocProvider(
+                  create: (context) => getIt<LoginCubit>(),
+                  child: const LoginScreen(),
+                ));
       default:
         return unDefinedRoute();
     }
