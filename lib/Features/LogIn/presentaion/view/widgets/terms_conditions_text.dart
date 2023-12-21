@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:my_advanced_app/Core/App_Theme/app_color.dart';
-import 'package:my_advanced_app/Core/App_Theme/text_style.dart';
+import '../../../../../Core/App_Theme/app_color.dart';
+import '../../../../../Core/App_Theme/text_style.dart';
 
 class TermsConditionsText extends StatelessWidget {
   const TermsConditionsText({super.key});

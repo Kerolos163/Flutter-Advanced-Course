@@ -9,12 +9,17 @@ abstract class AppTextStyle {
     FontWeight? fontWeight,
     double? fontSize,
     double? height,
+    TextDecoration? textDecoration,
+    Color? decorationColor,
   }) {
     return TextStyle(
       color: color ?? AppColor.textColor,
       fontWeight: fontWeight,
       fontSize: fontSize ?? 14.sp,
       height: height,
+      decoration: textDecoration,
+      decorationColor: decorationColor,
+      decorationThickness: 2,
     );
   }
 }

@@ -21,11 +21,12 @@ class _ApiService implements ApiService {
   String? baseUrl;
 
   @override
-  Future<ModelResponseModel> login(LoginRequestModel loginRequestModel) async {
+  Future<ModelResponseModel> login(LoginRequestModel loginRequestBody) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
-    final _data = loginRequestModel;
+    final _data = <String, dynamic>{};
+    _data.addAll(loginRequestBody.toJson());
     final _result = await _dio
         .fetch<Map<String, dynamic>>(_setStreamType<ModelResponseModel>(Options(
       method: 'POST',
