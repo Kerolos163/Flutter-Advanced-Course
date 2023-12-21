@@ -7,5 +7,5 @@ class LoginRequestModel {
   final String password;
 
   LoginRequestModel({required this.email, required this.password});
-  factory LoginRequestModel.fromJson(Map<String, dynamic> json) => _$LoginRequestModelFromJson(json);
+    Map<String, dynamic> toJson() => _$LoginRequestModelToJson(this);
 }

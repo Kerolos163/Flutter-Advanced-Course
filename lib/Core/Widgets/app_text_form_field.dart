@@ -43,6 +43,7 @@ class TextFormFieldContainer extends StatelessWidget {
         enabledBorder: borderState(color: AppColor.lightGray),
         focusedBorder: borderState(color: AppColor.primary),
         focusedErrorBorder: borderState(color: AppColor.error),
+        errorBorder: borderState(color: AppColor.error),
         suffixIcon: suffixIcon,
       ),
       style: AppTextStyle.getFontStyle(color: AppColor.textColor),

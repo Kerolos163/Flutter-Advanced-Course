@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_advanced_app/Features/LogIn/data/Models/login_request_model.dart';
 import 'package:my_advanced_app/Features/LogIn/data/repos/login_repo.dart';
@@ -8,6 +9,7 @@ class LoginCubit extends Cubit<LoginState> {
   LoginCubit(this.loginRepo) : super(InitState());
   static LoginCubit get(context) => BlocProvider.of(context);
   bool isVisiable = false;
+  final formKey = GlobalKey<FormState>();
   changeVisibility() {
     isVisiable = !isVisiable;
     emit(ChangevisibilityState());

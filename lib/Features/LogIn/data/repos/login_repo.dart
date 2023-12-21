@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:my_advanced_app/Core/networking/api_error_handler.dart';
 import 'package:my_advanced_app/Core/networking/api_result.dart';
 import 'package:my_advanced_app/Core/networking/api_service.dart';
@@ -5,16 +7,18 @@ import 'package:my_advanced_app/Features/LogIn/data/Models/login_request_model.d
 import 'package:my_advanced_app/Features/LogIn/data/Models/login_response_model.dart';
 
 class LoginRepo {
-  final ApiService apiService;
+  final ApiService _apiService;
 
-  LoginRepo({required this.apiService});
+  LoginRepo(this._apiService);
+
   Future<ApiResult<ModelResponseModel>> login(
-      LoginRequestModel loginRequestModel) async {
+      LoginRequestModel loginRequestBody) async {
     try {
-      var response = await apiService.login(loginRequestModel);
+      final response = await _apiService.login(loginRequestBody);
       return ApiResult.success(response);
-    } on Exception catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+    } catch (errro) {
+      log(errro.toString());
+      return ApiResult.failure(ErrorHandler.handle(errro));
     }
   }
 }
