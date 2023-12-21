@@ -1,4 +1,4 @@
-import 'package:my_advanced_app/Features/LogIn/data/Models/login_response_model.dart';
+import '../../../data/Models/login_response_model.dart';
 
 abstract class LoginState {}
 

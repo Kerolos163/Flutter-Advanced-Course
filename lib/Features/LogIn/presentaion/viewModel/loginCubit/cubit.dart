@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:my_advanced_app/Features/LogIn/data/Models/login_request_model.dart';
-import 'package:my_advanced_app/Features/LogIn/data/repos/login_repo.dart';
-import 'package:my_advanced_app/Features/LogIn/presentaion/viewModel/loginCubit/state.dart';
+import '../../../data/Models/login_request_model.dart';
+import '../../../data/repos/login_repo.dart';
+import 'state.dart';
 
 class LoginCubit extends Cubit<LoginState> {
   final LoginRepo loginRepo;

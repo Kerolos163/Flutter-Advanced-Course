@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:my_advanced_app/Core/di/dependency_injection.dart';
-import 'package:my_advanced_app/Features/Home/Presenation/View/home_view.dart';
-import 'package:my_advanced_app/Features/LogIn/presentaion/viewModel/loginCubit/cubit.dart';
+import '../di/dependency_injection.dart';
+import '../../Features/Home/Presenation/View/home_view.dart';
+import '../../Features/LogIn/presentaion/viewModel/loginCubit/cubit.dart';
 
 import '../../Features/LogIn/presentaion/view/login_view.dart';
 import '../../Features/onBoarding/presentation/view/on_boarding_view.dart';

@@ -1,10 +1,10 @@
 import 'dart:developer';
 
-import 'package:my_advanced_app/Core/networking/api_error_handler.dart';
-import 'package:my_advanced_app/Core/networking/api_result.dart';
-import 'package:my_advanced_app/Core/networking/api_service.dart';
-import 'package:my_advanced_app/Features/LogIn/data/Models/login_request_model.dart';
-import 'package:my_advanced_app/Features/LogIn/data/Models/login_response_model.dart';
+import '../../../../Core/networking/api_error_handler.dart';
+import '../../../../Core/networking/api_result.dart';
+import '../../../../Core/networking/api_service.dart';
+import '../Models/login_request_model.dart';
+import '../Models/login_response_model.dart';
 
 class LoginRepo {
   final ApiService _apiService;

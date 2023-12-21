@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:my_advanced_app/Core/networking/api_constants.dart';
-import 'package:my_advanced_app/Features/LogIn/data/Models/login_request_model.dart';
-import 'package:my_advanced_app/Features/LogIn/data/Models/login_response_model.dart';
+import 'api_constants.dart';
+import '../../Features/LogIn/data/Models/login_request_model.dart';
+import '../../Features/LogIn/data/Models/login_response_model.dart';
 
 import 'package:retrofit/retrofit.dart';
 

@@ -1,9 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
-import 'package:my_advanced_app/Core/networking/api_service.dart';
-import 'package:my_advanced_app/Core/networking/dio_factory.dart';
-import 'package:my_advanced_app/Features/LogIn/data/repos/login_repo.dart';
-import 'package:my_advanced_app/Features/LogIn/presentaion/viewModel/loginCubit/cubit.dart';
+
+import '../../Features/LogIn/data/repos/login_repo.dart';
+import '../../Features/LogIn/presentaion/viewModel/loginCubit/cubit.dart';
+import '../networking/api_service.dart';
+import '../networking/dio_factory.dart';
 
 final getIt = GetIt.instance;
 

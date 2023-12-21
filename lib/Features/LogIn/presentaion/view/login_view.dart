@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
-import 'package:my_advanced_app/Features/LogIn/presentaion/view/widgets/login_form_widget.dart';
-import 'package:my_advanced_app/Features/LogIn/presentaion/viewModel/loginCubit/cubit.dart';
-import 'package:my_advanced_app/Features/LogIn/presentaion/viewModel/loginCubit/state.dart';
 
+import '../viewModel/loginCubit/cubit.dart';
+import '../viewModel/loginCubit/state.dart';
+import 'widgets/login_form_widget.dart';
 import 'widgets/welcome_back_container.dart';
 
 class LoginScreen extends StatelessWidget {
